@@ -5,20 +5,21 @@
 
 You can execute the script with 3 different arguments :
 
+## Install
 ```sh
 ./OVN_gateway.sh install
 ```
 
 To perform the initial installation of the OVN Gateway (you will need your public IP and BPI Key).
 
-
+## Reinstall
 ```sh
 ./OVN_gateway.sh reinstall
 ```
 
 To perform a reinstallation of the OVN Gateway (you will need your public IP and BPI Key).
 
-
+## Upgrade
 ```sh
 ./OVN_gateway.sh upgrade
 ```
