@@ -149,6 +149,7 @@ case "$1" in
 		SAVEKEY=$(grep BPIKEY config | cut -d= -f2)
 		$DOCKERBIN stop "overledger-network-gateway" > /dev/null 2>&1
 		$DOCKERBIN container rm "overledger-network-gateway" > /dev/null 2>&1
+		$DOCKERBIN rmi "overledger-network-gateway" > /dev/null 2>&1
 		$DOCKERBIN pull "quantnetwork/overledger-network-gateway:latest"
 		$DOCKERBIN run -dit --name "overledger-network-gateway" --network "ovl-net" -p "8080:8080" -p "11337:11337" -e GATEWAY_ID="$SAVEKEY" -e GATEWAY_HOST="$SAVEIP" -e MONGO_DB_HOST="ovl-mongo" "quantnetwork/overledger-network-gateway:latest"
 
