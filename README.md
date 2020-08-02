@@ -29,7 +29,7 @@ To perform an upgrade to the latest OVN docker image (this is automatic, it uses
 
 ## Testing (Linux CLI)
 ```sh
-curl -H Content-Type: application/json -X POST -d '{connectorId:C1,task:Send transaction}' http://YOUR.PUBLIC.IP.HERE:8080/tasks
+curl -H "Content-Type: application/json" -X POST -d '{"connectorId":"C1","task":"Send transaction"}' http://YOUR.PUBLIC.IP.HERE:8080/tasks
 ```
 
 Change the IP address and connectorID to accord with yours.
@@ -37,7 +37,7 @@ Change the IP address and connectorID to accord with yours.
 
 ## Testing (Windows Powershell)
 ```sh
-Invoke-WebRequest 'http://YOUR.PUBLIC.IP.HERE:8080/tasks' -Method Post -Body '{connectorId:C7,task:Send transaction}' -ContentType 'application/json'
+Invoke-WebRequest 'http://YOUR.PUBLIC.IP.HERE:8080/tasks' -Method Post -Body '{"connectorId":"C7","task":"Send transaction"}' -ContentType 'application/json'
 ```
 
 Change the IP address and connectorID to accord with yours.
