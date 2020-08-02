@@ -44,5 +44,5 @@ Change the connectorID to accord with yours.
 
 
 
-This script is just a POC, but if it can help you, i'll be happy.
+This script is just a POC(KISS mode), but if it can help you, i'll be happy, it's intended to work on a dedicated server for the OVN Gateway, with only one instance of the OVN Gateway and one instance of mongoDB (It uses the containers name instead of IDs, but if needed, that behavior can be changed easily)
 
