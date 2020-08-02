@@ -37,8 +37,12 @@ Change the connectorID to accord with yours.
 
 ## Testing (Under Windows and powershell)
 ```sh
-Invoke-WebRequest 'http://YOUR.IP.HERE:8080/tasks' -Method Post -Body '{connectorId:C7,task:Send transaction}' -ContentType 'application/json'
+Invoke-WebRequest 'http://YOUR.PUBLIC.IP.HERE:8080/tasks' -Method Post -Body '{connectorId:C7,task:Send transaction}' -ContentType 'application/json'
 ```
+
+Change the connectorID to accord with yours.
+
+
 
 This script is just a POC, but if it can help you, i'll be happy.
 
