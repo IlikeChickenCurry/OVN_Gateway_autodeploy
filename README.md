@@ -32,7 +32,7 @@ To perform an upgrade to the latest OVN docker image (this is automatic, it uses
 curl -H Content-Type: application/json -X POST -d '{connectorId:C1,task:Send transaction}' http://YOUR.PUBLIC.IP.HERE:8080/tasks
 ```
 
-Change the connectorID to accord with yours.
+Change the IP address and connectorID to accord with yours.
 
 
 ## Testing (Under Windows and powershell)
@@ -40,9 +40,9 @@ Change the connectorID to accord with yours.
 Invoke-WebRequest 'http://YOUR.PUBLIC.IP.HERE:8080/tasks' -Method Post -Body '{connectorId:C7,task:Send transaction}' -ContentType 'application/json'
 ```
 
-Change the connectorID to accord with yours.
+Change the IP address and connectorID to accord with yours.
 
 
-
+## NOTE
 This script is just a POC(KISS mode), but if it can help you, i'll be happy, it's intended to work on a dedicated server for the OVN Gateway, with only one instance of the OVN Gateway and one instance of mongoDB (It uses the containers name instead of IDs, but if needed, that behavior can be changed easily)
 
