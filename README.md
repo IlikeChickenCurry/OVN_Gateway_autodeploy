@@ -24,7 +24,7 @@ To perform a reinstallation of the OVN Gateway (you will need your public IP and
 ./OVN_gateway.sh upgrade
 ```
 
-To perform an upgrade to the latest OVN docker image (this is automatic, it uses the config file created when installing/reinstalling).
+To perform an upgrade to the latest OVN docker image (this is automatic, it uses the config file created when installing/reinstalling, it contains your IP and BPIKEY).
 
 
 ## Testing (Linux CLI)
